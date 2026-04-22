@@ -1,0 +1,13 @@
+Business Problem : Delivery Delay & Reliability
+
+Customers often face long wait times, but the "Estimated Delivery Date" provided by the platform is frequently too conservative (twice as long as actual delivery). This drives away potential customers who see a long wait and decide not to buy.
+
+Key Question: "What is the actual versus estimated delivery time, and how does this delay impact our customer review scores?"
+
+The Goal: Use machine learning to provide a more accurate (and shorter) delivery estimate to increase conversion without promising dates you can't hit
+
+"The Trust Gap": In e-commerce, the period between clicking "Buy" and receiving the package is the highest point of customer anxiety.
+
+The Leak: If order_delivered_customer_date is consistently later than order_estimated_delivery_date, customers lose trust and won't return (The Leaky Bucket).
+
+The Inefficiency: If the estimate is too long (to stay safe), customers may not buy at all because they want the item sooner.
